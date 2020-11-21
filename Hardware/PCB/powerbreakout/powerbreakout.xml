@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/rsholmes/GoogleDrive/Hobbies/Music/Instruments/synths/scratch/Power breakout/Hardware/PCB/powerbreakout/powerbreakout.sch</source>
+    <date>Sat 21 Nov 2020 02:01:23 PM EST</date>
+    <tool>Eeschema 5.1.8-db9833491~87~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Euro/Kosmo power breakout</title>
+        <company>Rich Holmes / Analog Output</company>
+        <rev/>
+        <date>2020-11-21</date>
+        <source>powerbreakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F73FA24</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F73FA2A</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F73FA30</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F73FA36</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Synth_power_2x5</value>
+      <footprint>ao_tht:Power_Header</footprint>
+      <libsource lib="ao_symbols" part="Synth_power_2x5" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F73591B</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Screw_Terminal_01x03</value>
+      <footprint>ao_tht:TerminalBlock_Degson_DG301_1x03_P5.00mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Screw_Terminal_01x03" description="Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F836BF8</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>SolderJumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9B1FC</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>SolderJumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB9B641</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Screw_Terminal_01x03">
+      <description>Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Open">
+      <description>Solder Jumper, 2-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ao_symbols" part="Synth_power_2x5">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Synth_power_2x5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-12V" type="passive"/>
+        <pin num="2" name="-12V" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="+12V" type="passive"/>
+        <pin num="10" name="+12V" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/usr/share/kicad/library/Jumper.lib</uri>
+    </library>
+    <library logical="ao_symbols">
+      <uri>/home/rsholmes/GoogleDrive/Hobbies/Music/Instruments/synths/scratch/Power breakout/Hardware/PCB/powerbreakout/ao_symbols.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="J1" pin="3"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="7"/>
+      <node ref="J1" pin="6"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="2" name="-12V">
+      <node ref="J2" pin="3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="3" name="+12V">
+      <node ref="J2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="JP1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="J1" pin="10"/>
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="5" name="Net-(D2-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+  </nets>
+</export>
